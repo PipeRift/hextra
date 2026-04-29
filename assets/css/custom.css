@@ -1,0 +1,15 @@
+@theme {
+  --color-dark: #1c1c1c;
+}
+
+:root {
+  --primary-hue: 88deg;
+  --primary-saturation: 100%;
+  --primary-lightness: 50%;
+}
+
+.dark {
+  --primary-hue: 80deg;
+  --primary-saturation: 100%;
+  --primary-lightness: 50%;
+}

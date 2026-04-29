@@ -325,7 +325,7 @@
       "hx:dark:hover:text-white",
       "hx:dark:opacity-80",
       "hx:dark:placeholder:text-gray-400",
-      "hx:dark:shadow-[0_-12px_16px_#111]",
+      "hx:dark:shadow-[0_-12px_16px_#131313]",
       "hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset]",
       "hx:dark:shadow-none",
       "hx:dark:text-amber-200",

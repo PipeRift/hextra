@@ -13,7 +13,7 @@
   --color-primary-700: hsl(var(--primary-hue) var(--primary-saturation) calc(calc(var(--primary-lightness) / 50) * 39));
   --color-primary-800: hsl(var(--primary-hue) var(--primary-saturation) calc(calc(var(--primary-lightness) / 50) * 32));
   --color-primary-900: hsl(var(--primary-hue) var(--primary-saturation) calc(calc(var(--primary-lightness) / 50) * 24));
-  --color-dark: #1c1c1c;
+  --color-dark: #131313;
 }
 
 html {
@@ -30,7 +30,8 @@ body {
   --primary-lightness: 50%;
   --navbar-height: 4rem;
   --hextra-banner-height: 2rem;
-  --menu-height: 3.75rem; /* 60px */
+  --menu-height: 3.75rem;
+  /* 60px */
 }
 
 .dark {
@@ -58,7 +59,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -67,9 +71,7 @@ body {
 }
 
 @layer base {
-  :where(a, button, [role="tab"], [role="menuitem"], [role="menuitemradio"], input, select, textarea, [tabindex="0"]):not(
-      [class*="hextra-focus-visible"]
-    ):focus-visible {
+  :where(a, button, [role="tab"], [role="menuitem"], [role="menuitemradio"], input, select, textarea, [tabindex="0"]):not([class*="hextra-focus-visible"]):focus-visible {
     @apply hx:hextra-focus;
   }
 }
